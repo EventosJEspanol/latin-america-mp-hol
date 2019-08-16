@@ -13,8 +13,9 @@ Conexión a Internet es requerida para poder descargar dependencias de cada uno 
   
 Una vez se han instalado las herramientas, es necesario descargar algunas imagenes de Docker y dependencias de Maven. Para ello ejecutamos los siguientes comandos:
 
-1. docker pull mongo:3.6
-2. Run MondoDB: verify MongoDB image name with the command `docker images`, it can be mongodb or mongo, and then execute this command `docker run -d --name mongodb-instance -p 27017:27017 mongo`
-3. git clone https://github.com/EventosJEspanol/latin-america-micro-profile.git
-4. cd latin-america-micro-profile
-5. mvn clean package
+1. Descargar la imagen de MongoDB desde docker: `docker pull mongo:3.6`
+2. Verificar la imagen MongoDB con el siguiente comando `docker images`, el nombre de la imagen que debemos visualizar puede ser mongodb o mongo.  
+3. Ejecutar MondoDB: `docker run -d --name mongodb-instance -p 27017:27017 mongo`
+4. Clonamos el repositorio de este HOL: `git clone https://github.com/EventosJEspanol/latin-america-mp-hol.git`
+5. Ingresamos al directorio recien creado: `cd latin-america-mp-hol.git`
+6. Ejecutamos Maven para obtener las depencias: `mvn clean package`
